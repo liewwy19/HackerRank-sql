@@ -18,3 +18,7 @@ ORDER BY
   name asc, 
   marks asc
   
+
+-- METHOD 2
+SELECT Name,Grade,Marks FROM Students,Grades WHERE Marks BETWEEN Min_Mark AND Max_Mark and Grade>=8 ORDER BY Grade desc,Name;
+SELECT null,Grade,Marks FROM Students,Grades WHERE Marks BETWEEN Min_Mark AND Max_Mark and Grade<8 ORDER BY Grade desc,Marks;
